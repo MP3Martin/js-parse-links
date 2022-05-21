@@ -27,12 +27,9 @@ $(document).ready(function() {
 
     required_placeholders = [par_url]
 
-    for ( let placeholder of required_placeholders ) {
-
-        if (placeholder == '') {
-            error_missing_pars += "<code>" + Object.keys({placeholder})[0] + "</code>" + ", "
-            errored = errored + 1
-        }
+    if (par_url == '') {
+        error_missing_pars += "<code>" + Object.keys({par_url})[0] + "</code>" + ", "
+        errored = errored + 1
     }
 
     if (errored > 0) {
