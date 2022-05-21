@@ -39,7 +39,7 @@ $(document).ready(function() {
         $("#error_text").html(error_missing_pars.slice(0, -2) + "<br>")
     }
     var placeholders_list = par_placeholder.split(";")
-    for(var placeholder1 in placeholders_list) {
+    for(var placeholder1 of placeholders_list) {
         temp1 = placeholder1.split(",")
         alert(placeholder1)
         one1 = temp1[0]
