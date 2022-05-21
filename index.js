@@ -9,5 +9,5 @@ function getPar(name, url) {
  }
 
 $(document).ready(function() {
-    $("#test_text").text(getPar("a"));
+    $("#test_text").text('The "a" parameter is ' + getPar("a").length + ' characters long');
 });
