@@ -28,13 +28,13 @@ $(document).ready(function() {
     required_placeholders = [par_url]
 
     if (par_url == '') {
-        error_missing_pars += "<code>" + Object.keys({par_url})[0] + "</code>" + ", "
+        error_missing_pars += "<code>" + "url" + "</code>" + ", "
         errored = errored + 1
     }
 
     if (errored > 0) {
         $("#error_text").show()
         // $("#test_text").hide()
-        $("#error_text").html(error_missing_pars + "<br>")
+        $("#error_text").html(error_missing_pars.slice(0, -2); + "<br>")
     }
 });
