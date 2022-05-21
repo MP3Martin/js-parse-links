@@ -4,6 +4,7 @@ let par_placeholder = ""
 let par_type = ""
 let error_missing_pars = "There are missing required parameters: "
 let errored = 0
+let placeholders = {}
 
 
 function getPar(name, url) {
@@ -37,4 +38,6 @@ $(document).ready(function() {
         // $("#test_text").hide()
         $("#error_text").html(error_missing_pars.slice(0, -2) + "<br>")
     }
+    var placeholders_list = par_placeholder.split(";")
+    alert(placeholders_list)
 });
