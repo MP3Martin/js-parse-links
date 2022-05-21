@@ -4,25 +4,7 @@ html {
 }
 
 body {
-  background: linear-gradient(45deg, #2196F3 0%, darken(#2196F3, 50%) 100%);
-  background-size: 200% 200%;  
-  height: 100%;
-  width: 100%;
-  animation: background 6s ease infinite;
-}
-
-@keyframes background { 
-  0% {
-    background-position: 0% 50%;
-  }
-  
-  50% {
-    background-position: 100% 50%;
-  }
-  
-  100% {
-    background-position: 0% 50%;
-  }
+  background: -webkit-linear-gradient(360deg,#224e4d 10%,#083023 360%); background: linear-gradient(360deg,#224e4d 10%,#083023 360%);
 }
 
 .center {
