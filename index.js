@@ -39,5 +39,11 @@ $(document).ready(function() {
         $("#error_text").html(error_missing_pars.slice(0, -2) + "<br>")
     }
     var placeholders_list = par_placeholder.split(";")
-    alert(placeholders_list)
+    for(var placeholder1 in placeholders_list) {
+        temp1 = placeholder1.split(",")
+        one1 = temp1[0]
+        two1 = temp1[1]
+        placeholders[one1] = two1
+    }
+    alert(placeholders)
 });
