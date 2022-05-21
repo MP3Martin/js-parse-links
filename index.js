@@ -38,6 +38,6 @@ $(document).ready(function() {
     if (errored > 0) {
         $("#error_text").show()
         // $("#test_text").hide()
-        $("#error_text").innerText(error_missing_pars + "\n")
+        $("#error_text").innerText(error_missing_pars.slice(0, -2) + "\n")
     }
 });
