@@ -41,9 +41,10 @@ $(document).ready(function() {
     var placeholders_list = par_placeholder.split(";")
     for(var placeholder1 in placeholders_list) {
         temp1 = placeholder1.split(",")
+        alert(temp1)
         one1 = temp1[0]
         two1 = temp1[1]
         placeholders[one1] = two1
     }
-    alert(placeholders)
+    //
 });
