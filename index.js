@@ -30,7 +30,7 @@ $(document).ready(function() {
     for ( let placeholder of required_placeholders ) {
 
         if (placeholder == '') {
-            error_missing_pars += "<code>" + Object.keys(placeholder) + "</code>" + ", "
+            error_missing_pars += "<code>" + Object.keys({placeholder})[0] + "</code>" + ", "
             errored = errored + 1
         }
     }
