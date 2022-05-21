@@ -1,3 +1,12 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: -webkit-linear-gradient(360deg,#071010 10%,#106B6B 360%); background: linear-gradient(360deg,#071010 10%,#106B6B 360%);
+}
+
 .center {
     position: absolute;
     top: 50%;
@@ -5,4 +14,8 @@
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+}
+
+.wtext {
+color: #BEBEBE;
 }
