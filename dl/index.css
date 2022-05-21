@@ -1,10 +1,28 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
-   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-   background-size: 400% 400%;
+  background: linear-gradient(45deg, #2196F3 0%, darken(#2196F3, 50%) 100%);
+  background-size: 200% 200%;  
+  height: 100%;
+  width: 100%;
+  animation: background 6s ease infinite;
+}
 
-
-   /* background-color: #073e52;
-   background-image: linear-gradient(315deg, #073e52 0%, #0d5434 100%); */
+@keyframes background { 
+  0% {
+    background-position: 0% 50%;
+  }
+  
+  50% {
+    background-position: 100% 50%;
+  }
+  
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .center {
