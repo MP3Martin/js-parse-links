@@ -35,6 +35,6 @@ $(document).ready(function() {
     if (errored > 0) {
         $("#error_text").show()
         // $("#test_text").hide()
-        $("#error_text").html(error_missing_pars.slice(0, -2); + "<br>")
+        $("#error_text").html(error_missing_pars.slice(0, -2) + "<br>")
     }
 });
