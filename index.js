@@ -37,6 +37,7 @@ $(document).ready(function() {
 
     if (errored > 0) {
         $("#error_text").show()
+        $("#error_text_br").show()
         // $("#test_text").hide()
         $("#error_text").text(error_missing_pars)
     }
