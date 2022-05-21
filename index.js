@@ -44,7 +44,6 @@ $(document).ready(function() {
         one1 = temp1[0]
         two1 = temp1[1]
         placeholders[one1] = two1
-        alert(JSON.stringify(placeholders))
     }
-    //
+    alert(JSON.stringify(placeholders))
 });
