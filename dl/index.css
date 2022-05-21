@@ -1,5 +1,7 @@
 body {
-   background-image: linear-gradient(to right bottom, #051937, #002c48, #003f55, #03535f, #276666);
+   background-color: #2b4162;
+   background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+
 
    /* background-color: #073e52;
    background-image: linear-gradient(315deg, #073e52 0%, #0d5434 100%); */
