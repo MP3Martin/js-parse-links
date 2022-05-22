@@ -24,8 +24,8 @@ code {
 }
 
 .loading-circ-ripple {
-  height: 48px;
-  width: 48px;
+  height: 30%;
+  width: 30%;
   color: #5a5a5a;
   border-radius: 50%;
   position: relative;
