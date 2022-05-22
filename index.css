@@ -51,8 +51,8 @@ code {
     left: 20px;
     top: 20px; }
   100% {
-    height: 48px;
-    width: 48px;
+    height: 30vh;
+    width: 30vw;
     left: -5px;
     top: -5px;
     opacity: 0; } }
