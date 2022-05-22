@@ -56,8 +56,8 @@ $(document).ready(function() {
         
         final_url = par_url
         
-        for(var placeholder2 of placeholders) {
-            var value = placeholders[placeholder2];
+        for (const [placeholder2, value] of Object.entries(placeholders)) {
+            // var value = placeholders[placeholder2];
             
             // Is it an url?
             if (isUrl(value)) {
