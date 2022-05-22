@@ -26,8 +26,8 @@ code {
 .lds-ripple {
   display: inline-block;
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 30vw;
+  height: 30vw;
 }
 .lds-ripple div {
   position: absolute;
