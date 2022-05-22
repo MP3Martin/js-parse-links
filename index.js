@@ -70,6 +70,7 @@ $(document).ready(function() {
                 errored = errored + 1
                 $("#error_text").show()
                 error_invalid_url += "<code>" + final_url + "</code>"
+                $("#error_text").html(error_invalid_url + "<br>")
                 alert(final_url)
             }
     }
