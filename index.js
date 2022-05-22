@@ -43,28 +43,31 @@ $(document).ready(function() {
         $("#error_text").show()
         // $("#test_text").hide()
         $("#error_text").html(error_missing_pars.slice(0, -2) + "<br>")
-    }
-    var placeholders_list = par_placeholder.split(";")
-    for(var placeholder1 of placeholders_list) {
-        temp1 = placeholder1.split(",")
-        one1 = temp1[0]
-        two1 = temp1[1]
-        placeholders[one1] = two1
-    }
-
-    /* alert(JSON.stringify(placeholders)) */
-
-    final_url = par_url
-
-    for(var placeholder2 of placeholders) {
-        var value = placeholders[placeholder2];
-        
-        #Is it an url?
-        if (isUrl(value)) {
-            /* */
-        } else {
-            final_url = final_url.replace("{" + placeholder2 + "}", value)
+    } else {
+        var placeholders_list = par_placeholder.split(";")
+        for(var placeholder1 of placeholders_list) {
+            temp1 = placeholder1.split(",")
+            one1 = temp1[0]
+            two1 = temp1[1]
+            placeholders[one1] = two1
         }
+        
+        /* alert(JSON.stringify(placeholders)) */
+        
+        final_url = par_url
+        
+        for(var placeholder2 of placeholders) {
+            var value = placeholders[placeholder2];
+            
+            #Is it an url?
+            if (isUrl(value)) {
+                /* */
+            } else {
+                final_url = final_url.replace("{" + placeholder2 + "}", value)
+            }
+        }
+
+        alert(final_url)
     }
-    alert(final_url)
+    
 });
