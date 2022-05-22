@@ -59,7 +59,7 @@ $(document).ready(function() {
         for(var placeholder2 of placeholders) {
             var value = placeholders[placeholder2];
             
-            #Is it an url?
+            // Is it an url?
             if (isUrl(value)) {
                 /* */
             } else {
