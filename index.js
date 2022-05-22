@@ -59,15 +59,14 @@ $(document).ready(function() {
         for (const [placeholder2, value] of Object.entries(placeholders)) {
             // var value = placeholders[placeholder2];
             
-            // Is it an url?
-            if (isUrl(value)) {
-                /* */
-            } else {
-                final_url = final_url.replace("{" + placeholder2 + "}", value)
-            }
+            final_url = final_url.replace("{" + placeholder2 + "}", value)
         }
 
-        alert(final_url)
+        if (isUrl(final_url)) {
+                /* */
+            } else {
+                alert(final_url)
+            }
     }
     
 });
