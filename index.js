@@ -2,6 +2,7 @@
 let par_url = ""
 let par_placeholder = ""
 let par_type = ""
+let final_url = ""
 let error_missing_pars = "There are missing required parameters: "
 let errored = 0
 let placeholders = {}
@@ -16,6 +17,11 @@ function getPar(name, url) {
      if (!results[2]) return '';
      return decodeURIComponent(results[2].replace(/\+/g, " "));
  }
+
+const isUrl = string => {
+    try { return Boolean(new URL(string)); }
+    catch(e){ return false; }
+}
 
 $(document).ready(function() {
     $("#error_text").hide()
@@ -45,5 +51,20 @@ $(document).ready(function() {
         two1 = temp1[1]
         placeholders[one1] = two1
     }
-    alert(JSON.stringify(placeholders))
+
+    /* alert(JSON.stringify(placeholders)) */
+
+    final_url = par_url
+
+    for(var placeholder2 of placeholders) {
+        var value = placeholders[placeholder2];
+        
+        #Is it an url?
+        if (isUrl(value)) {
+            /* */
+        } else {
+            final_url = final_url.replace("{" + placeholder2 + "}", value)
+        }
+    }
+    alert(final_url)
 });
