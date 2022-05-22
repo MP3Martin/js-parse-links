@@ -26,7 +26,7 @@ const isUrl = string => {
 
 $(document).ready(function() {
     $("#error_text").hide()
-    $("#test_text").text('The "a" parameter is ' + getPar("a").length + ' characters long (' + getPar("a") + ')');
+    // $("#test_text").text('The "a" parameter is ' + getPar("a").length + ' characters long (' + getPar("a") + ')');
 
     // -- Get parameters -- \\
     par_url = getPar("url");
