@@ -4,6 +4,7 @@ let par_placeholder = ""
 let par_type = ""
 let final_url = ""
 let error_missing_pars = "There are missing required parameters: "
+let error_invalid_url = "The url is invalid: "
 let errored = 0
 let placeholders = {}
 
@@ -65,6 +66,9 @@ $(document).ready(function() {
         if (isUrl(final_url)) {
                 /* */
             } else {
+                errored = errored + 1
+                $("#error_text").show()
+                error_invalid_url += "<code>" + final_url + "</code>"
                 alert(final_url)
             }
     }
