@@ -3,8 +3,7 @@ html {
   height: 100%;
 }
 
-body {
-  background: -webkit-linear-gradient(360deg,#071010 10%,#106B6B 360%); background: linear-gradient(360deg,#071010 10%,#106B6B 360%);
+body { background: -o-linear-gradient(bottom,#071010 10%,#106B6B 360%); background: -webkit-gradient(linear,left bottom, left top,color-stop(10%, #071010),color-stop(360%, #106B6B)); background: linear-gradient(300deg,#071010 10%,#106B6B 360%);
 }
 
 .center {
