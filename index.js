@@ -53,7 +53,7 @@ $(document).ready(function() {
             two1 = temp1[1]
             
             // If placeholder value is url
-            if (isUrl(two1)) {
+            if (isUrl(two1.split(".")[0])) {
                 console.log(two1 + " is a url")
             }
              
