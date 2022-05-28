@@ -7,6 +7,7 @@ let error_missing_pars = "There are missing required parameters: "
 let error_invalid_url = "The url is invalid: "
 let errored = 0
 let placeholders = {}
+let urls = {}
 
 
 function getPar(name, url) {
@@ -49,12 +50,14 @@ $(document).ready(function() {
         var placeholders_list = par_placeholder.split(";")
         for(var placeholder1 of placeholders_list) {
             temp1 = placeholder1.split(",")
-            one1 = temp1[0]
-            two1 = temp1[1]
+            one1 = temp1[0] // placeholder name
+            two1 = temp1[1] // placeholder value
             
             // If placeholder value is url
             if (isUrl(two1.split(".")[0])) {
                 console.log(two1 + " is a url")
+                urls[two1.split(".")[0]] = two1.split(".").shift().join("")
+                console.log(urls)
             }
              
             placeholders[one1] = two1
