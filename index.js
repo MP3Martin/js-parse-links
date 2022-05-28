@@ -65,6 +65,7 @@ $(document).ready(function() {
 
         if (isUrl(final_url)) {
                 // alert(final_url)
+                $("#loading").show()
                 window.location = final_url
             } else {
                 errored = errored + 1
