@@ -41,6 +41,7 @@ $(document).ready(function() {
     }
 
     if (errored > 0) {
+        $("#loading").hide()
         $("#error_text").show()
         // $("#test_text").hide()
         $("#error_text").html(error_missing_pars.slice(0, -2) + "<br>")
@@ -65,10 +66,10 @@ $(document).ready(function() {
 
         if (isUrl(final_url)) {
                 // alert(final_url)
-                $("#loading").show()
                 window.location = final_url
             } else {
                 errored = errored + 1
+                $("#loading").hide()
                 $("#error_text").show()
                 error_invalid_url += "<code>" + final_url + "</code>"
                 $("#error_text").html(error_invalid_url + "<br>")
