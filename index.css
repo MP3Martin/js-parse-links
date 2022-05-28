@@ -28,7 +28,10 @@ code {
   position: relative;
   width: 80px;
   height: 80px;
-  background:#eef2f5;
+
+  background-color: #555;
+  box-shadow: 0 0 5px 10px #555;
+
   border-radius:20px;
   display: flex;
   align-items: center;
