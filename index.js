@@ -59,7 +59,7 @@ $(document).ready(function() {
 
                 temp8928 = two1 + ""
                 temp8928 = temp8928.split(".")
-                temp8928 = temp8928.shift()
+                temp8928 = temp8928.slice(1)
                 // temp8928 = temp8928.join(".")
 
                 urls[two1.split(".")[0]] = temp8928
