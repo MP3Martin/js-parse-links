@@ -51,6 +51,10 @@ $(document).ready(function() {
             temp1 = placeholder1.split(",")
             one1 = temp1[0]
             two1 = temp1[1]
+            
+            // If placeholder value is url
+            console.log(two1)
+             
             placeholders[one1] = two1
         }
         
