@@ -53,7 +53,9 @@ $(document).ready(function() {
             two1 = temp1[1]
             
             // If placeholder value is url
-            console.log(two1)
+            if (isUrl(two1)) {
+                console.log(two1 + " is a url")
+            }
              
             placeholders[one1] = two1
         }
