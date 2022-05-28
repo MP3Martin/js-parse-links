@@ -56,7 +56,7 @@ $(document).ready(function() {
             // If placeholder value is url
             if (isUrl(two1.split(".")[0])) {
                 console.log(two1 + " is a url")
-                urls[two1.split(".")[0]] = two1.split(".").shift().join("")
+                urls[two1.split(".")[0]] = two1.split(".").shift().join(".")
                 console.log(urls)
             }
              
