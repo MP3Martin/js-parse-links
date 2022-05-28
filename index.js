@@ -58,7 +58,7 @@ $(document).ready(function() {
                 console.log(two1 + " is a url")
 
                 temp8928 = two1 + ""
-                // temp8928 = temp8928.split(".")
+                temp8928 = temp8928.split(".")
                 // temp8928 = temp8928.shift()
                 // temp8928 = temp8928.join(".")
 
