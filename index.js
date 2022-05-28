@@ -58,11 +58,8 @@ $(document).ready(function() {
                 console.log(two1 + " is a url")
 
                 temp8928 = two1 + ""
-                temp8928 = temp8928.split(".")
-                temp8928 = temp8928.slice(1)
-                temp8928 = temp8928.join(".")
 
-                urls[two1.split(".")[0]] = temp8928
+                urls[two1.split(".")[0]] = temp8928.split(".").slice(1).join(".")
                 console.log(urls)
             }
              
