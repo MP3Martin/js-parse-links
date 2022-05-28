@@ -66,7 +66,7 @@ $(document).ready(function() {
 
         if (isUrl(final_url)) {
                 // alert(final_url)
-                window.location = final_url
+                window.location.replace(final_url)
             } else {
                 errored = errored + 1
                 $("#loading").hide()
