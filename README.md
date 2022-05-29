@@ -1,3 +1,9 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/MP3Martin/js-parse-links/badge)](#/)
+[<img src="https://img.shields.io/github/license/MP3Martin/js-parse-links">](#/)
+[<img src="https://img.shields.io/github/stars/MP3Martin/js-parse-links">](#/)
+[<img src="https://img.shields.io/github/forks/MP3Martin/js-parse-links">](#/)
+[<img src="https://img.shields.io/github/issues/MP3Martin/js-parse-links">](#/)
+
 # js-parse-links
 **⚠️ Not finished ⚠️**
 
