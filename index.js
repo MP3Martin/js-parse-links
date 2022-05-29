@@ -72,27 +72,66 @@ $(document).ready(function() {
 
         console.log(urls)
         
-        /* alert(JSON.stringify(placeholders)) */
+        
         
         final_url = par_url
-        
-        for (const [placeholder2, value] of Object.entries(placeholders)) {
-            // var value = placeholders[placeholder2];
-            
-            final_url = final_url.replace("{" + placeholder2 + "}", value)
-        }
 
-        if (isUrl(final_url)) {
-                // alert(final_url)
-                window.location.replace(final_url)
-            } else {
-                errored = errored + 1
-                $("#loading").hide()
-                $("#error_text").show()
-                error_invalid_url += "<code>" + final_url + "</code>"
-                $("#error_text").html(error_invalid_url + "<br>")
-                // alert(final_url)
+        Promise.all(Object.keys(urls).map(url => fetch(url)))
+        .then(resp => Promise.all( resp.map(r => r.json()) ))
+        .then(result => {
+            pinged_urls = result;
+            
+            // create * done_urls_not_filtered *
+            for (const [key, value] of Object.entries(urls)) {
+                done_urls_not_filtered[Object.keys(urls)[i_56625525252]+"|"+Object.values(urls)[i_56625525252]] = pinged_urls[i_56625525252]
+                i_56625525252++
             }
+            
+            // create * done_urls *
+            for (const [key, value] of Object.entries(urls)) {
+                filtered_resp = done_urls_not_filtered[Object.keys(urls)[i_56625298252]+"|"+Object.values(urls)[i_56625298252]]
+                if (Object.values(urls)[i_56625298252] === "") {
+                    add566512 = "";
+                } else {
+                    add566512 = "|"+Object.values(urls)[i_56625298252]
+                }
+                
+                obj_separators = Object.keys(urls)[i_56625298252]+add566512
+                obj_separators = obj_separators.split("|").slice(1)
+                
+                obj_separators.forEach(function (item, index) {
+                    try {
+                        filtered_resp = filtered_resp[item]
+                    } catch (e) {
+                        let filtered_resp = e
+                    }
+                });
+                
+                console.log(filtered_resp)
+        
+                done_urls[Object.keys(urls)[i_56625298252]+add566512] = filtered_resp
+                i_56625298252++
+            }
+            
+            for (const [placeholder2, value] of Object.entries(placeholders)) {
+                // var value = placeholders[placeholder2];
+                
+                final_url = final_url.replace("{" + placeholder2 + "}", value)
+            }
+    
+            if (isUrl(final_url)) {
+                    // alert(final_url)
+                    window.location.replace(final_url)
+                } else {
+                    errored = errored + 1
+                    $("#loading").hide()
+                    $("#error_text").show()
+                    error_invalid_url += "<code>" + final_url + "</code>"
+                    $("#error_text").html(error_invalid_url + "<br>")
+                    // alert(final_url)
+                }
+        });
+        
     }
     
 });
