@@ -4,7 +4,7 @@
 Todo:
 - [x] Make the website not look trash
 - [x] System to get parameters and generate url
-- [x] Loading
+- [x] Loading icon
 - [x] Use text in placeholders
 - [ ] Use APIs in placeholders
 - [ ] Docs
