@@ -134,7 +134,8 @@ $(document).ready(function() {
             }
     
             if (isUrl(final_url)) {
-                    // alert(final_url)
+                    // ' works as & in url parameters
+                    final_url = final_url.replace("'", "&")
                     window.location.replace(final_url)
                 } else {
                     errored = errored + 1
