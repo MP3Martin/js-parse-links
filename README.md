@@ -25,7 +25,9 @@ Todo:
 * `https://mp3martin.github.io/js-parse-links/?url=https://google.com/search?q=Tr*mp once said: "{fact}"&placeholder=fact,https://tronalddump.io/random/quote|value`
    * goes to `https://www.google.com/search?q=Tr*mp%20once%20said:` _+ random fact_
 <br>
-Use this project for anything
+# Other info
+* Use this project for anything.
+* Do not share **parse.mp3martin.xyz**, instead use **mp3martin.github.io/js-parse-links** because it may change.
 <br>
 <br>
 If you find this useful, you can show support by **⭐**ing this project or contributing to this project. (**not mandatory!**)
