@@ -93,6 +93,8 @@ $(document).ready(function() {
         .then(result => {
             pinged_urls = result;
             
+            $("#error_text").hide()
+
             // create * done_urls_not_filtered *
             for (const [key, value] of Object.entries(urls)) {
                 done_urls_not_filtered[Object.keys(urls)[i_56625525252]+"|"+Object.values(urls)[i_56625525252]] = pinged_urls[i_56625525252]
