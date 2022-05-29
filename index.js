@@ -115,6 +115,7 @@ $(document).ready(function() {
             
             // replace placeholders with pinged urls
             for (const [key, value] of Object.entries(done_urls)) {
+                console.log("Key is " + key + " and value is " + value)
                 placeholders = JSON.stringify(placeholders)
                 placeholders = placeholders.replace(key, value)
                 placeholders = JSON.parse(placeholders)
