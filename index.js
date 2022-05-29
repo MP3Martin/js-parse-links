@@ -124,6 +124,7 @@ $(document).ready(function() {
                 placeholders = JSON.stringify(placeholders)
                 placeholders = placeholders.replace(key, value)
                 placeholders = placeholders.replace("[object Object]", "!ERR!")
+                console.log(placeholders)
                 placeholders = JSON.parse(placeholders)
             }
 
