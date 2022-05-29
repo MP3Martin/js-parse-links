@@ -140,7 +140,7 @@ $(document).ready(function() {
                     // alert(final_url)
                 }
         })
-        .catch((error) => { console.error(error); });
+        .catch((error) => { console.log(error); });
         
     }
     
