@@ -113,6 +113,13 @@ $(document).ready(function() {
                 i_56625298252++
             }
             
+            // replace placeholders with pinged urls
+            for (const [key, value] of Object.entries(done_urls)) {
+                placeholders = JSON.stringify(placeholders)
+                placeholders = placeholders.replace(key, value)
+                placeholders = JSON.parse(placeholders)
+            }
+
             for (const [placeholder2, value] of Object.entries(placeholders)) {
                 // var value = placeholders[placeholder2];
                 
