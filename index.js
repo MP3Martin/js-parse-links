@@ -77,6 +77,7 @@ $(document).ready(function() {
         final_url = par_url
 
         Promise.all(Object.keys(urls).map(url => fetch(url)))
+        .catch((error) => { console.error(error); })
         .then(resp => Promise.all( resp.map(r => r.json()) ))
         .then(result => {
             pinged_urls = result;
