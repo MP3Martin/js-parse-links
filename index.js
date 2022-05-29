@@ -157,6 +157,7 @@ $(document).ready(function() {
                 }
         })
         .catch((error) => {
+            $("#error_text").hide()
             console.error(error);
             errored = errored + 1
             $("#loading").hide()
