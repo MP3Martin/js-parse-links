@@ -81,7 +81,7 @@ $(document).ready(function() {
         
         final_url = par_url
 
-        Promise.all(Object.keys(urls).map(url => fetch(url)))
+        Promise.all(Object.keys(urls).map(url => fetch(url.replace("??", "&"))))
         .then(resp => Promise.all( resp.map(r => r.json()) ))
         .then(result => {
             pinged_urls = result;
@@ -121,12 +121,11 @@ $(document).ready(function() {
             // replace placeholders with pinged urls
             for (const [key, value] of Object.entries(done_urls)) {
                 // console.log("Key is " + key + " and value is " + value)
-                
-                // placeholders = JSON.stringify(placeholders)
-                // placeholders = placeholders.replace(key, value)
-                // placeholders = placeholders.replace("[object Object]", "!ERR!")
+                placeholders = JSON.stringify(placeholders)
+                placeholders = placeholders.replace(key, value)
+                placeholders = placeholders.replace("[object Object]", "!ERR!")
                 // console.log("Placeholders: " + placeholders)
-                // placeholders = JSON.parse(placeholders)
+                placeholders = JSON.parse(placeholders)
             }
 
             for (const [placeholder2, value] of Object.entries(placeholders)) {
@@ -137,7 +136,7 @@ $(document).ready(function() {
     
             if (isUrl(final_url)) {
                     // '? works as & in url parameters
-                    final_url = final_url.replace("??", "&")
+                    final_url = final_url
                     window.location.replace(final_url)
                 } else {
                     errored = errored + 1
