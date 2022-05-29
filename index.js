@@ -8,6 +8,8 @@ let error_invalid_url = "The url is invalid: "
 let errored = 0
 let placeholders = {}
 let urls = {}
+let pinged_urls = []
+let done_urls = {}
 
 
 function getPar(name, url) {
@@ -54,12 +56,12 @@ $(document).ready(function() {
             two1 = temp1[1] // placeholder value
             
             // If placeholder value is url
-            if (isUrl(two1.split(".")[0])) {
+            if (isUrl(two1.split("|")[0])) {
                 // console.log(two1 + " is an url")
 
                 temp8928 = two1 + ""
 
-                urls[two1.split(".")[0] + "." + two1.split(".")[1]] = temp8928.split(".").slice(1).slice(1).join(".")
+                urls[two1.split("|")[0]] = temp8928
             }
              
             placeholders[one1] = two1
