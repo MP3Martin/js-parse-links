@@ -26,6 +26,4 @@ Todo:
    * goes to `https://www.google.com/search?q=Tr*mp%20once%20said:` _+ random fact_
 <br>
 <br>
-<br>
-<br>
 If you find this useful, you can show support by **⭐**ing this project or contributing to this project. (**not mandatory!**)
