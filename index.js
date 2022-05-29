@@ -146,7 +146,7 @@ $(document).ready(function() {
             errored = errored + 1
             $("#loading").hide()
             $("#error_text").show()
-            misc_error += "<code>" + error + "</code>" + "<br>" + "The browser likely can't reach one of the servers."
+            misc_error += "<code>" + error + "</code>" + "<br><br>" + "The browser likely can't reach one of the servers."
             $("#error_text").html(misc_error + "<br>")
         });
         
