@@ -5,6 +5,7 @@ let par_type = ""
 let final_url = ""
 let error_missing_pars = "There are missing required parameters: "
 let error_invalid_url = "The url is invalid: "
+let misc_error = ""
 let errored = 0
 let placeholders = {}
 let urls = {}
@@ -140,7 +141,14 @@ $(document).ready(function() {
                     // alert(final_url)
                 }
         })
-        .catch((error) => { console.log(error); });
+        .catch((error) => {
+            console.error(error);
+            errored = errored + 1
+            $("#loading").hide()
+            $("#error_text").show()
+            misc_error += "<code>" + error + "</code>"
+            $("#error_text").html(misc_error + "<br>")
+        });
         
     }
     
