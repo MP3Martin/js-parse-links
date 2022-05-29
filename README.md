@@ -12,7 +12,9 @@ Todo:
 - [x] System to get parameters and generate url
 - [x] Loading icon
 - [x] Use text in placeholders
-- [ ] Use APIs in placeholders
+- [x] Use APIs in placeholders
+- [ ] Downloading files
+- [ ] Add more options
 - [ ] Docs
 
 # Examples
