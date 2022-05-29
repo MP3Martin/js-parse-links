@@ -70,7 +70,7 @@ $(document).ready(function() {
             placeholders[one1] = two1
         }
 
-        console.log(urls)
+        // console.log(urls)
         
         
         
