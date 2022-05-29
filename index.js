@@ -61,11 +61,11 @@ $(document).ready(function() {
 
                 urls[two1.split(".")[0] + "." + two1.split(".")[1]] = temp8928.split(".").slice(1).slice(1).join(".")
             }
-
-            console.log(urls)
              
             placeholders[one1] = two1
         }
+
+        console.log(urls)
         
         /* alert(JSON.stringify(placeholders)) */
         
