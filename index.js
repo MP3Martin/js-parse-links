@@ -121,11 +121,12 @@ $(document).ready(function() {
             // replace placeholders with pinged urls
             for (const [key, value] of Object.entries(done_urls)) {
                 // console.log("Key is " + key + " and value is " + value)
-                placeholders = JSON.stringify(placeholders)
-                placeholders = placeholders.replace(key, value)
-                placeholders = placeholders.replace("[object Object]", "!ERR!")
-                console.log("Placeholders: " + placeholders)
-                placeholders = JSON.parse(placeholders)
+                
+                // placeholders = JSON.stringify(placeholders)
+                // placeholders = placeholders.replace(key, value)
+                // placeholders = placeholders.replace("[object Object]", "!ERR!")
+                // console.log("Placeholders: " + placeholders)
+                // placeholders = JSON.parse(placeholders)
             }
 
             for (const [placeholder2, value] of Object.entries(placeholders)) {
