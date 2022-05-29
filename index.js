@@ -9,7 +9,10 @@ let errored = 0
 let placeholders = {}
 let urls = {}
 let pinged_urls = []
+let done_urls_not_filtered = {}
 let done_urls = {}
+let i_56625525252 = 0
+let i_56625298252 = 0
 
 
 function getPar(name, url) {
