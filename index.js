@@ -60,12 +60,16 @@ $(document).ready(function() {
             two1 = temp1[1] // placeholder value
             
             // If placeholder value is url
-            if (isUrl(two1.split("|")[0])) {
-                // console.log(two1 + " is an url")
-
-                temp8928 = two1 + ""
-
-                urls[two1.split("|")[0]] = temp8928.split("|").slice(1).join("|")
+            try {
+                if (isUrl(two1.split("|")[0])) {
+                    // console.log(two1 + " is an url")
+    
+                    temp8928 = two1 + ""
+    
+                    urls[two1.split("|")[0]] = temp8928.split("|").slice(1).join("|")
+                }
+            } catch (e) {
+                // nothing
             }
              
             placeholders[one1] = two1
