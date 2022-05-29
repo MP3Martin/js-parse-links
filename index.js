@@ -86,7 +86,7 @@ $(document).ready(function() {
         for (i of Object.keys(urls)) {
             misc_error += "<code>" + i + "</code>" + ", "
         }
-        $("#error_text").html(misc_error.slice(0, -2) + "<br>")
+        $("#error_text").html("<br>" + misc_error.slice(0, -2) + "<br>")
 
         Promise.all(Object.keys(urls).map(url => fetch(url.replace("??", "&"))))
         .then(resp => Promise.all( resp.map(r => r.json()) ))
