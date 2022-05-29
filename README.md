@@ -20,8 +20,10 @@ Todo:
 # Examples
 * `https://mp3martin.github.io/js-parse-links/?url=https://google.{tld}/search?q={search}&placeholder=tld,com;search,Hello World!`
    * goes to `https://www.google.com/search?q=Hello%20World!`
+
 * `https://mp3martin.github.io/js-parse-links/?url={fact}&placeholder=fact,https://dog.ceo/api/breeds/image/random|message`
    * goes to `https://images.dog.ceo/breeds/` _+ random dog image_
+
 * `https://mp3martin.github.io/js-parse-links/?url=https://google.com/search?q=Tr*mp once said: "{fact}"&placeholder=fact,https://tronalddump.io/random/quote|value`
    * goes to `https://www.google.com/search?q=Tr*mp%20once%20said:` _+ random fact_
 <br>
