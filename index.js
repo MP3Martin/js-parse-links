@@ -151,6 +151,7 @@ $(document).ready(function() {
                     } else if (par_type === "display") {
                          $("#loading").hide()
                          $("#error_text").show()
+                         misc_error = ""
                          misc_error += final_url
                          $("#error_text").html(misc_error + "<br>")
                     }
