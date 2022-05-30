@@ -146,7 +146,15 @@ $(document).ready(function() {
             if (isUrl(final_url)) {
                     // '? works as & in url parameters
                     final_url = final_url
-                    window.location.replace(final_url)
+                    if (par_type === "" || par_type === "redirect") {
+                         window.location.replace(final_url)
+                    } else if (par_type === "display") {
+                         $("#loading").hide()
+                         $("#error_text").show()
+                         misc_error += final_url
+                         $("#error_text").html(misc_error + "<br>")
+                    }
+                    
                 } else {
                     errored = errored + 1
                     $("#loading").hide()
