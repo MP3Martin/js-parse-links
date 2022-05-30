@@ -163,6 +163,14 @@ $(document).ready(function() {
                     error_invalid_url += "<code>" + final_url + "</code>"
                     $("#error_text").html(error_invalid_url + "<br>")
                     // alert(final_url)
+
+                    if (par_type === "display") {
+                         $("#loading").hide()
+                         $("#error_text").show()
+                         misc_error = ""
+                         misc_error += final_url
+                         $("#error_text").html(misc_error + "<br>")
+                    }
                 }
         })
         .catch((error) => {
