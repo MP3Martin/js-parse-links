@@ -24,6 +24,14 @@ Todo:
    * goes to `https://images.dog.ceo/breeds/` _+ random dog image_ <br><br>
 * `https://mp3martin.github.io/js-parse-links/?url=https://google.com/search?q=Tr*mp once said: "{fact}"&placeholder=fact,https://tronalddump.io/random/quote|value`
    * goes to `https://www.google.com/search?q=Tr*mp%20once%20said:` _+ random fact_
+
+# Parameters
+| Parameter         | Default value             | Type    | Required            | Description                                                                                                                                                                                                                     | Example value                                                    |
+| ----------------- | ------------------------- | ------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| `url`             | :x:                       | string  | :heavy_check_mark:  | The target url                                                                                                                                                                                                                  | `https://www.google.com/search?q={search}`                       |
+| `placeholder`     | :x:                       | string  | :x:                 | All the placeholders (in this format: `key,value;another_key,another_value`)                                                                                                                                                    | `search,Hello World!`                                            |
+| `type`            | redirect                  | string  | :x:                 | Type of redirection / thing to do after parsing the url (all possible values: `redirect`)                                                                                                                                                                        | `redirect`                                                       |
+
 <br>
 
 # Other info
