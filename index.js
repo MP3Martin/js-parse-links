@@ -132,7 +132,9 @@ $(document).ready(function() {
                 // console.log("Key is " + key + " and value is " + value)
                 placeholders = JSON.stringify(placeholders)
                 placeholders = placeholders.replace(key, value)
-                placeholders = placeholders.replace("[object Object]", "!ERR!")
+                placeholders = placeholders.replaceAll("[object Object]", "!ERR!")
+                // escape double quotes
+                placeholders = placeholders.replaceAll("\"", "\"")
                 // console.log("Placeholders: " + placeholders)
                 placeholders = JSON.parse(placeholders)
             }
