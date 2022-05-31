@@ -146,6 +146,7 @@ $(document).ready(function() {
             // replace special cahrs
             final_url = final_url.replace("'semi'", ";")
             final_url = final_url.replace("'comma'", ",")
+            final_url = final_url.replace("'amp'", "&")
              
             if (isUrl(final_url)) {
                     // '? works as & in url parameters
