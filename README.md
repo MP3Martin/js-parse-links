@@ -35,7 +35,7 @@ Todo:
 <br>
 
 # Other info
-* By the way, this project is serverless (it is only a static site)
+* By the way, this project is serverless (it is only a static site, everything happens client-side)
 * Use this project for anything.
 * Do not share `parse.mp3martin.xyz`, instead use `mp3martin.github.io/js-parse-links` because it may change.
 <br>
