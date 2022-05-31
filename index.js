@@ -143,6 +143,10 @@ $(document).ready(function() {
                 final_url = final_url.replace("{" + placeholder2 + "}", value)
             }
     
+            // replace special cahrs
+            final_url = final_url.replace("`semi`", ";")
+            final_url = final_url.replace("`comma`", ",")
+             
             if (isUrl(final_url)) {
                     // '? works as & in url parameters
                     final_url = final_url
@@ -179,6 +183,7 @@ $(document).ready(function() {
             errored = errored + 1
             $("#loading").hide()
             $("#error_text").show()
+            misc_error = ""
             misc_error += "<code>" + error + "</code>" + "<br><br>" + "The browser likely can't reach one of the servers or the url is incorrectly formatted."
             $("#error_text").html(misc_error + "<br>")
         });
