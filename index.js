@@ -130,7 +130,7 @@ $(document).ready(function() {
             // replace placeholders with pinged urls
             for (let [key, value] of Object.entries(done_urls)) {
                 // escape double quotes
-                value = value.replaceAll("\"", "\"")
+                value = value.replaceAll("\"", "\\"")
                 // console.log("Key is " + key + " and value is " + value)
                 placeholders = JSON.stringify(placeholders)
                 placeholders = placeholders.replace(key, value)
