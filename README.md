@@ -8,7 +8,7 @@
 **⚠️ Not finished ⚠️**
 
 Todo:
-- [x] Make the website not look trash
+- [x] Make the website look acceptable
 - [x] System to get parameters and generate url
 - [x] Loading icon
 - [x] Use text in placeholders
