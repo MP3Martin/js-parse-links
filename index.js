@@ -72,7 +72,7 @@ $(document).ready(function() {
                 // nothing
             }
              
-            placeholders[one1] = two1
+            placeholders[one1] = two1.replaceAll("\"", "\"")
         }
 
         // console.log(urls)
@@ -133,8 +133,6 @@ $(document).ready(function() {
                 placeholders = JSON.stringify(placeholders)
                 placeholders = placeholders.replace(key, value)
                 placeholders = placeholders.replaceAll("[object Object]", "!ERR!")
-                // escape double quotes
-                placeholders = placeholders.replaceAll("\"", "\"")
                 // console.log("Placeholders: " + placeholders)
                 placeholders = JSON.parse(placeholders)
             }
