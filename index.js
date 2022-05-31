@@ -72,7 +72,7 @@ $(document).ready(function() {
                 // nothing
             }
              
-            placeholders[one1] = two1.replaceAll("\"", "\"")
+            placeholders[one1] = two1
         }
 
         // console.log(urls)
@@ -129,6 +129,8 @@ $(document).ready(function() {
             
             // replace placeholders with pinged urls
             for (const [key, value] of Object.entries(done_urls)) {
+                // escape double quotes
+                value = value.replaceAll("\"", "\"")
                 // console.log("Key is " + key + " and value is " + value)
                 placeholders = JSON.stringify(placeholders)
                 placeholders = placeholders.replace(key, value)
