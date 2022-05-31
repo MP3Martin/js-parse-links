@@ -12,10 +12,10 @@ Todo:
 - [x] System to get parameters and generate url
 - [x] Loading icon
 - [x] Use text in placeholders
-- [x] Use APIs in placeholders
+- [x] Use APIs in placeholders _- (the main feature)_
+- [x] Documentation
 - [ ] Downloading files
 - [ ] Add more options
-- [ ] Docs
 
 # Examples
 * `https://mp3martin.github.io/js-parse-links/?url=https://google.{tld}/search?q={search}&placeholder=tld,com;search,Hello World!`
