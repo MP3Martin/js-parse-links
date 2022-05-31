@@ -88,7 +88,7 @@ $(document).ready(function() {
         }
         $("#error_text").html("<br>" + misc_error.slice(0, -2) + "<br>")
 
-        Promise.all(Object.keys(urls).map(url => fetch(url.replace("??", "&"))))
+        Promise.all(Object.keys(urls).map(url => fetch(url.replaceAll("??", "&"))))
         .then(resp => Promise.all( resp.map(r => r.json()) ))
         .then(result => {
             pinged_urls = result;
@@ -144,9 +144,9 @@ $(document).ready(function() {
             }
     
             // replace special cahrs
-            final_url = final_url.replace("'semi'", ";")
-            final_url = final_url.replace("'comma'", ",")
-            final_url = final_url.replace("'amp'", "&")
+            final_url = final_url.replaceAll("'semi'", ";")
+            final_url = final_url.replaceAll("'comma'", ",")
+            final_url = final_url.replaceAll("'amp'", "&")
              
             if (isUrl(final_url)) {
                     // '? works as & in url parameters
