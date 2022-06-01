@@ -14,9 +14,9 @@ Todo:
 - [x] Use text in placeholders
 - [x] Use APIs in placeholders _- (the main feature)_
 - [x] Documentation
+- [x] Add auto text wrapping (in display mode)
 - [ ] Downloading files
 - [ ] Add more parameters
-- [ ] Add auto text wrapping (in display mode)
 
 # Examples
 * `https://mp3martin.github.io/js-parse-links/?url=https://google.{tld}/search?q={search}&placeholder=tld,com;search,Hello World!`
