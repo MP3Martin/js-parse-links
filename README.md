@@ -26,7 +26,7 @@ Todo:
    * goes to `https://images.dog.ceo/breeds/` _+ random dog image_ <br><br>
 * `https://mp3martin.github.io/js-parse-links/?url=https://google.com/search?q=Tr*mp once said: "{fact}"&placeholder=fact,https://tronalddump.io/random/quote|value`
    * goes to `https://www.google.com/search?q=Tr*mp%20once%20said:` _+ random fact_
-* `https://parse.mp3martin.xyz/?url=Fun Fact: %7Bfact%7D<br><br><br>-'amp'nbsp'semi' 'amp'nbsp'semi'Refresh to see more!&placeholder=fact,https://uselessfacts.jsph.pl/random.json?language=en|text&type=display`
+* `https://mp3martin.github.io/js-parse-links/?url=Fun%20Fact:%20%7Bfact%7D%3Cbr%3E%3Cbr%3E%3Cbr%3E-'amp'nbsp'semi'%20'amp'nbsp'semi'Refresh%20to%20see%20more!&placeholder=fact,https://uselessfacts.jsph.pl/random.json?language=en|text&type=display`
    * displays random fact
 
 # Parameters
