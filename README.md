@@ -15,7 +15,7 @@ Todo:
 - [x] Use APIs in placeholders _- (the main feature)_
 - [x] Documentation
 - [x] Add auto text wrapping (in display mode)
-- [ ] Add iframe mode
+- [ ] Add iframe mode (useful when you want the page to be refreshable)
 - [ ] Downloading files
 - [ ] Add more parameters
 
