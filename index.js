@@ -165,6 +165,12 @@ $(document).ready(function() {
                     } else if (par_type === "iframe") {
                          $("#loading").hide()
                          $('#iframe').attr('src', final_url);
+                    } else {
+                        $("#loading").hide()
+                        $("#error_text").show()
+                        misc_error = ""
+                        misc_error += "Unknown type: " + "<code>" + par_type + "<code>"
+                        $("#error_text").html(misc_error + "<br>")
                     }
                     
                 } else {
