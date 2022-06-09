@@ -161,6 +161,10 @@ $(document).ready(function() {
                          misc_error = ""
                          misc_error += final_url
                          $("#error_text").html(misc_error + "<br>")
+                    
+                    } else if (par_type === "iframe") {
+                         $("#loading").hide()
+                         $('#iframe').attr('src', final_url);
                     }
                     
                 } else {
