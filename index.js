@@ -164,6 +164,7 @@ $(document).ready(function() {
                     
                     } else if (par_type === "iframe") {
                          $("#loading").hide()
+                         $("#iframe").show()
                          $('#iframe').attr('src', final_url);
                     } else {
                         $("#loading").hide()
