@@ -5,7 +5,6 @@
 [<img src="https://img.shields.io/github/issues/MP3Martin/js-parse-links">](#/)
 
 # js-parse-links
-**⚠️ Not finished ⚠️**
 
 Todo:
 - [x] Make the website look acceptable
@@ -15,7 +14,7 @@ Todo:
 - [x] Use APIs in placeholders _- (the main feature)_
 - [x] Documentation
 - [x] Add auto text wrapping (in display mode)
-- [ ] Add iframe mode (useful when you want the page to be refreshable)
+- [x] Add iframe mode (useful when you want the page to be refreshable)
 - [ ] Downloading files
 - [ ] Add more parameters
 
