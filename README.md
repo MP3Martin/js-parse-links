@@ -43,7 +43,7 @@ Todo:
 * By the way, this project is serverless (it is only a static site, everything happens client-side)
 * Use this project for anything.
 * Do not share `parse.mp3martin.xyz`, instead use `mp3martin.github.io/js-parse-links` because it may change.
-* https://www.url-encode-decode.com is useful when you want to share the links on social media *(the links sometimes cannot contain special characters)*
+* https://www.url-encode-decode.com is useful when you want to share the links on social media *(the links sometimes cannot contain special characters)* **❗only encode the part after `?url=`❗**
 <br>
 
 If you find this useful, you can show support by **⭐**ing this project or contributing to this project. (**not mandatory!**)
