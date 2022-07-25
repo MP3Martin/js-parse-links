@@ -88,6 +88,13 @@ $(document).ready(function() {
         }
         $("#error_text").html("<br>" + misc_error.slice(0, -2) + "<br>")
 
+        if (par_type === "iframe") {
+            $("#error_text").show()
+            misc_error += "Connecting to: "
+            misc_error += "<code>" + final_url + "</code>" + ", "
+            $("#error_text").html("<br>" + misc_error.slice(0, -2) + "<br>")
+        }
+
         Promise.all(Object.keys(urls).map(url => fetch(url.replaceAll("??", "&"))))
         .then(resp => Promise.all( resp.map(r => r.json()) ))
         .then(result => {
