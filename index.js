@@ -77,7 +77,7 @@ $(document).ready(function() {
 
         // console.log(urls)
         
-        
+        console.log("Start: " + final_url)
         
         final_url = par_url
 
@@ -156,10 +156,11 @@ $(document).ready(function() {
             final_url = final_url.replaceAll("'semi'", ";")
             final_url = final_url.replaceAll("'comma'", ",")
             final_url = final_url.replaceAll("'amp'", "&")
+
+            console.log("Final: " + final_url)
              
             if (isUrl(final_url)) {
-                    // '? works as & in url parameters
-                    final_url = final_url
+                    // final_url = final_url
                     if (par_type === "" || par_type === "redirect") {
                          window.location.replace(final_url)
                     } else if (par_type === "display") {
