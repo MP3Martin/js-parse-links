@@ -53,6 +53,8 @@ $(document).ready(function() {
         // $("#test_text").hide()
         $("#error_text").html(error_missing_pars.slice(0, -2) + "<br>")
     } else {
+        console.log("First: " + par_url)
+
         var placeholders_list = par_placeholder.split(";")
         for(var placeholder1 of placeholders_list) {
             temp1 = placeholder1.split(",")
@@ -76,9 +78,7 @@ $(document).ready(function() {
         }
 
         // console.log(urls)
-        
-        console.log("Start: " + final_url)
-        
+                
         final_url = par_url
 
         $("#error_text").show()
