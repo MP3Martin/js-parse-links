@@ -1,3 +1,5 @@
+console.log("Hi from INDEX.JS")
+
 // -- Setup variables -- \\
 let par_url = ""
 let par_placeholder = ""
@@ -32,6 +34,7 @@ const isUrl = string => {
 }
 
 $(document).ready(function() {
+    console.log("Hi from DOCUMENT READY")
     $("#error_text").hide()
     // $("#test_text").text('The "a" parameter is ' + getPar("a").length + ' characters long (' + getPar("a") + ')');
 
@@ -53,7 +56,7 @@ $(document).ready(function() {
         // $("#test_text").hide()
         $("#error_text").html(error_missing_pars.slice(0, -2) + "<br>")
     } else {
-        console.log("First: " + par_url)
+        console.log("Hi from NOT ERRORED")
 
         var placeholders_list = par_placeholder.split(";")
         for(var placeholder1 of placeholders_list) {
