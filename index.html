@@ -7,6 +7,15 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
+
+    <script defer>
+        window.onload = function(){ setTimeout( function(){
+            document.getElementById("iframe").onload = function() { 
+                $('#error_text').hide()
+                $('#loading').hide()
+            };
+        }, 200); };
+    </script>    
 </head>
 
 <body>
@@ -18,15 +27,6 @@
     </div>
 
     <iframe id="iframe" src="about:blank" width="100%" height="100%" frameborder="0" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; display: none;"></iframe>
-
-    <script defer>
-        window.onload = function(){ setTimeout( function(){
-            document.getElementById("iframe").onload = function() { 
-                $('#error_text').hide()
-                $('#loading').hide()
-            };
-        }, 200); };
-    </script>
 
     <script async>
         let par_type_2 = ""
