@@ -29,6 +29,8 @@ Todo:
    * displays random fact
 * `https://mp3martin.github.io/js-parse-links/?url=https://web.archive.org/web/20220605174851id_/http://www.milliondollarhomepage.com/&type=iframe`
    * displays *The Million Dollar Webpage* without redirecting
+* `https://mp3martin.github.io/js-parse-links/?url=Random%20number:%20{fact}&placeholder=fact,https://www.randomnumberapi.com/api/v1.0/random?min=0??max=100|0&type=display`
+   * displays random number
 
 # Parameters
 | Parameter         | Default value             | Type    | Required            | Description                                                                                                                                                                                                                     | Example value                                                    |
